@@ -28,8 +28,8 @@ Stable API has to be defined when instantiating the java driver so that connecti
 2022-02-08 18:23:17.249  INFO 36756 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2022-02-08 18:23:17.250  INFO 36756 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2022-02-08 18:23:17.266  INFO 36756 --- [nio-8081-exec-1] c.m.c.p.s.c.PersonRestController         : Using Default Driver API
-2022-02-08 18:23:22.736  INFO 36756 --- [nio-8081-exec-3] c.m.c.p.s.c.PersonRestController         : Using Versioned Driver API
+2022-02-08 18:23:22.736  INFO 36756 --- [nio-8081-exec-3] c.m.c.p.s.c.PersonRestController         : Using Stable Driver API
 2022-02-08 18:23:22.743  INFO 36756 --- [nio-8081-exec-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:108}] to localhost:27017
 ```
 
-The log above shows that the driver is establishing a seperate connection pool for both the Default Driver and Versioned API. 
+The log above shows that the driver is establishing a seperate connection pool for both the Default Driver and Stable API.
